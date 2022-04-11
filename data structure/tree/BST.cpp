@@ -46,6 +46,6 @@ int main()
 {
     int a[] = {9, 5, 4, 3, 1};
     sort(a, a + 4);
-    cout <<a[BSTBottomUp(a, 5, 0,(5+0)/2 , 4)] << endl;
+    cout << a[BSTBottomUp(a, 5, 0, (5 + 0) / 2, 4)] << endl;
     return 0;
 }
