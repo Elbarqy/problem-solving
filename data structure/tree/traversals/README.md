@@ -63,3 +63,11 @@ Three remarks about the iterative approach:
    2) after the inner loop -> going backward
    3) before the outer loop ends it's iteration -> going right
 3) For each loop there is a stack 
+
+
+###let's talk about each remark
+#### 1- function calls are reversed 
+
+* Funtion calls doesn't stop untill it returns then process next line, so whatever code is between the definition of the function and the it's call is an iterative loop till it breaks (returns)
+* For each function call there is another recursive call to traverse right then do the same and traverse left.
+* so we wrap the previous iterative loop with another
