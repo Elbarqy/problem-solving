@@ -1,5 +1,6 @@
 #Assignment note
-###picking a word from a list without storing it
+
+##picking a word from a list without storing it
 
 ![formula](https://render.githubusercontent.com/render/math?math=P_{item}=\frac{1}{i}=%20P_{old,pick}%20\times%20P_{new,pick}%20\times%20ways)
 
