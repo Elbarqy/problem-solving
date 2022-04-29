@@ -3,9 +3,10 @@
 ## Content
 
 - [ ] Traversal
-  - [x] 318
-  - [ ] 11831
-  - [ ] 11906
+  - [ ] 318
+  - [x] 11831
+  - [x] 11906
+  - [x] 12422
 - [ ] Connected Components
 - [ ] Bipartite graph
 - [ ] Topological sort
