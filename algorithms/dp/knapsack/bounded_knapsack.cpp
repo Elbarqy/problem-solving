@@ -31,7 +31,31 @@ void printDpMap(vector<vi> dp)
         cout << endl;
     }
 }
-//TODO traverse solution
+
+void solutionTraversal(vector<vi> &dp)
+{
+    int row = dp.size();
+    int col = dp[0].size() - 1;
+    vi items_idx;
+
+    while (row)
+    {
+        --row;
+        while (--col)
+        {
+            if (dp[row][col] != dp[row][col - 1])
+            {
+                items_idx.push_back(row - 1);
+                break;
+            }
+        }
+    }
+
+    for(auto idx: items_idx){
+        cout<<idx<<" ";
+    }
+    cout<<'\n';
+}
 
 int main()
 {
@@ -53,5 +77,7 @@ int main()
         scanf("%d", &value);
         v.push_back(value);
     }
-    printDpMap(ks(c, w, v));
+    vector<vi> dp = ks(c, w, v);
+    printDpMap(dp);
+    solutionTraversal(dp);
 }
